@@ -15,7 +15,7 @@ $('#try-btn').onclick = (e)=>{
         .then(issuesList => {
             console.log(issuesList);
             
-            issuesList.repository.issues.nodes.forEach( issue => {
+            issuesList.forEach( issue => {
               const $li = document.createElement('li')
               const $button = document.createElement('button')
               $button.className = "jr button m-05"

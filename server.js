@@ -24,7 +24,7 @@ app.use(function(req, res, next) {
 jrCMS.setToken(ghToken)
 jrCMS.init(app)
 
-jrCMS.RestAPI() //*
+// jrCMS.RestAPI() //*
 
 app.listen(PORT, ()=>{
   console.log(`Listening to PORT: ${PORT}`)

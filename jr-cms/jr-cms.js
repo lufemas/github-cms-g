@@ -46,6 +46,7 @@ module.exports.init = (app, baseRoute = '/issueslist') =>{
   app.get(baseRoute, (req,res)=>{
 
     ghAPIHAndler.getIssuesList(res, 10, CMSrepo)
+    // ghAPIHAndler.getIssuesList(res, 3, CMSrepo, 'REST', 1)
       
   })
 
