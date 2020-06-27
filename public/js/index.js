@@ -95,7 +95,7 @@ const renderArticle = (n)=>{
 // fetch('https://api.github.com/graphql', {
 //   method: 'POST',
 //   headers: {
-//     'Authorization': "bearer 046f66cc3824cf53411b37e37f6caca48748d85f",
+//     'Authorization': "bearer ...",
 //     'Content-Type': 'application/json',
 //     'Accept': 'application/json',
 //   },
