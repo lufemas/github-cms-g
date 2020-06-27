@@ -1,0 +1,17 @@
+{
+  "name": "github-cms-g",
+  "version": "1.0.0",
+  "description": "A CMS based on GitHub Issues",
+  "main": "server.js",
+  "author": "lufemas",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^18.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fetch-cookie": "^0.10.1",
+    "graphql-request": "^2.0.0",
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.2"
+  }
+}

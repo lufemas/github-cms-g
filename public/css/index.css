@@ -1,0 +1,8 @@
+#article-body > *{
+  /* width: 100%; */
+}
+
+pre {
+  overflow-x: auto;
+  width: 98%;
+}
