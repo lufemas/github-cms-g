@@ -3,7 +3,7 @@ const cors       = require('cors')
 const jrCMS      = require('./jr-cms/jr-cms')
 
 
-const { ghToken }  = require('./ghToken')
+const { ghToken }  = process.env.ghToken | require('./ghToken')
 
 
 const PORT = process.env.PORT || 3000;

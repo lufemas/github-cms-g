@@ -17,7 +17,7 @@ exports.getIssuesList = async function(res, n, CMSrepo, api = 'GRAPHQL', page = 
     res.send(data.repository.issues.nodes)
 
   }else if (api == 'REST'){
-    const data = await getDataRest(res, `?page=${page}&per_page=${n}`)
+    const data = await getDataRest(res, `?page=${page}&per_page=${n}`, CMSrepo)
     res.send(data)
   }
   
@@ -70,14 +70,14 @@ async function getDataGraphQL(res, query) {
 // REST Request
 
 
-async function getDataRest(res, route){
+async function getDataRest(res, route, {name, owner}){
 
   const headers = {
     'Authorization': `token ${ghToken}`,
     'User-Agent': 'github-cms-g'
   };
   
-  const url = 'https://api.github.com/repos/DenoBrazil/deno-forum/issues' + route; 
+  const url = `https://api.github.com/repos/${owner}/${name}/issues` + route; 
   
   // console.log(ghToken)
   // request(options, callback);
