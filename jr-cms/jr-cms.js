@@ -43,6 +43,9 @@ module.exports.setToken = (token)=>{
 } 
 
 module.exports.init = (app, baseRoute = '/issueslist') =>{
+  app.get('/', (req,res)=>{
+    res.send('API running')
+  })
   app.get(baseRoute, (req,res)=>{
 
     // ghAPIHAndler.getIssuesList(res, 10, CMSrepo)
